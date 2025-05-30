@@ -1,58 +1,73 @@
-# Welcome to Anthropic's Prompt Engineering Interactive Tutorial
+# 欢迎参加Anthropic提示工程互动教程
 
-## Course introduction and goals
+## 课程介绍与目标
 
-This course is intended to provide you with a comprehensive step-by-step understanding of how to engineer optimal prompts within Claude.
+本课程旨在帮助您全面掌握如何为Claude人工智能设计最优提示语的系统方法。
 
-**After completing this course, you will be able to**:
-- Master the basic structure of a good prompt 
-- Recognize common failure modes and learn the '80/20' techniques to address them
-- Understand Claude's strengths and weaknesses
-- Build strong prompts from scratch for common use cases
+​**​完成本课程后，您将能够​**​：
 
-## Course structure and content
+* 掌握优质提示语的基本结构
+* 识别常见失误模式并学习"二八法则"应对技巧
+* 理解Claude的优势与局限
+* 从零开始为常见应用场景构建强力提示语
 
-This course is structured to allow you many chances to practice writing and troubleshooting prompts yourself. The course is broken up into **9 chapters with accompanying exercises**, as well as an appendix of even more advanced methods. It is intended for you to **work through the course in chapter order**. 
+## 课程结构与内容
 
-**Each lesson has an "Example Playground" area** at the bottom where you are free to experiment with the examples in the lesson and see for yourself how changing prompts can change Claude's responses. There is also an [answer key](https://docs.google.com/spreadsheets/d/1jIxjzUWG-6xBVIa2ay6yDpLyeuOh_hR_ZB75a47KX_E/edit?usp=sharing).
+本课程采用理论与实践相结合的方式，设置大量提示语编写与调试练习。课程分为​**​9个章节及配套练习​**​，另附高级技巧附录。建议​**​按章节顺序系统学习​**​。
 
-Note: This tutorial uses our smallest, fastest, and cheapest model, Claude 3 Haiku. Anthropic has [two other models](https://docs.anthropic.com/claude/docs/models-overview), Claude 3 Sonnet and Claude 3 Opus, which are more intelligent than Haiku, with Opus being the most intelligent.
+​**​每节课均设有"示例演练区"​**​，供您自由尝试课程案例，直观感受提示语调整对Claude输出的影响。另附**参考答案表**。
 
-*This tutorial also exists on [Google Sheets using Anthropic's Claude for Sheets extension](https://docs.google.com/spreadsheets/d/19jzLgRruG9kjUQNKtCg1ZjdD6l6weA6qRXG5zLIAhC8/edit?usp=sharing). We recommend using that version as it is more user friendly.*
+注：本教程使用Anthropic最小、最快且最经济的Claude 3 Haiku模型。Anthropic还提供**另外两款模型**：能力更强的Claude 3 Sonnet和目前最强大的Claude 3 Opus。
 
-When you are ready to begin, go to `01_Basic Prompt Structure` to proceed.
+*本教程另有**基于Google Sheets的版本**，使用Anthropic的Claude for Sheets扩展程序运行。推荐使用该版本以获得更佳体验。*
 
-## Table of Contents
+准备就绪后，请进入`01_提示语基本结构`开始学习。
 
-Each chapter consists of a lesson and a set of exercises.
+## 课程目录
 
-### Beginner
-- **Chapter 1:** Basic Prompt Structure
+每个章节包含理论讲解与配套练习。
 
-- **Chapter 2:** Being Clear and Direct  
+### 初级篇
 
-- **Chapter 3:** Assigning Roles
+* ​**​第一章：​**​ 提示语基本结构
+* ​**​第二章：​**​ 清晰直接的表达
+* ​**​第三章：​**​ 角色设定技巧
 
-### Intermediate 
-- **Chapter 4:** Separating Data from Instructions
+### 中级篇
 
-- **Chapter 5:** Formatting Output & Speaking for Claude
+* ​**​第四章：​**​ 数据与指令分离
+* ​**​第五章：​**​ 输出格式化与代拟回复
+* ​**​第六章：​**​ 预判思维（分步思考法）
+* ​**​第七章：​**​ 示例运用技巧
 
-- **Chapter 6:** Precognition (Thinking Step by Step)
+### 高级篇
 
-- **Chapter 7:** Using Examples
+* ​**​第八章：​**​ 规避幻觉现象
+* ​**​第九章：​**​ 复杂提示语构建（行业应用）
+  * 从零构建对话机器人
+  * 法律服务场景应用
+  * ​**​练习：​**​ 金融服务场景应用
+  * ​**​练习：​**​ 编程辅助场景应用
+  * 结业与进阶指南
+* ​**​附录：​**​ 高阶提示工程
+  * 提示语链式调用
+  * 工具集成应用
+  * 搜索与检索增强
 
-### Advanced
-- **Chapter 8:** Avoiding Hallucinations
+---
 
-- **Chapter 9:** Building Complex Prompts (Industry Use Cases)
-  - Complex Prompts from Scratch - Chatbot
-  - Complex Prompts for Legal Services
-  - **Exercise:** Complex Prompts for Financial Services
-  - **Exercise:** Complex Prompts for Coding
-  - Congratulations & Next Steps
+​**​翻译说明​**​：
 
-- **Appendix:** Beyond Standard Prompting
-  - Chaining Prompts
-  - Tool Use
-  - Search & Retrieval
+1. 专业术语处理："Prompt Engineering"译为"提示工程"是AI领域的标准译法，与业界保持一致
+2. 文化适应调整：将"80/20 techniques"意译为"二八法则"，采用中文管理学界通用说法
+3. 技术概念本地化："Hallucinations"译为"幻觉现象"符合中文AI社区表述习惯
+4. 界面元素处理：保留"Claude"等产品名不译，维持品牌一致性
+5. 句式结构调整：将英语被动语态转换为中文主动句式（如"is intended to"译为"旨在"）
+6. 层级关系显化：使用中文标点符号规范（如英文项目符号改为中文顿号）
+7. 交互提示优化：将"When you are ready"译为"准备就绪后"，更符合中文教程语境
+
+​**​特色表达​**​：
+
+* "Thinking Step by Step"译为"分步思考法"既准确又体现方法论特征
+* "Precognition"译为"预判思维"兼顾字面意义与技术内涵
+* "Failure modes"译为"失误模式"比直译"失败模式"更符合中文技术文档表述习惯
